@@ -19,8 +19,6 @@ def send_slack_message_via_webhook(message):
 
     webhook_url = "https://hooks.slack.com/services/" + WORKSPACE_ID +  '/' + CHANNEL_ID + '/' + WEBHOOK_TOKEN
 
-    print(webhook_url,"====>>>")
-
     payload = {
         "text": message  # The message to send
     }
